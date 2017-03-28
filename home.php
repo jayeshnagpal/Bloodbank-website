@@ -30,13 +30,13 @@ include "navigation.php"
 <!-- Images below navigation bar -->
 <div class="row" style="height: 20%; padding-top: 70px;">
     <div class="col-4 content" >
-        <img src="images/home/image2.jpg" width="100%" height="auto">
+        <img src="images/image2.jpg" width="100%" height="auto">
     </div>
     <div class="col-4 content" id="img2">
-        <img src="images/home/image2.jpg" width="100%" height="auto">
+        <img src="images/image2.jpg" width="100%" height="auto">
     </div>
     <div class="col-4 content" id="img2">
-        <img src="images/home/image2.jpg" width="100%" height="auto">
+        <img src="images/image2.jpg" width="100%" height="auto">
     </div>
 
 </div>
@@ -79,9 +79,15 @@ include "navigation.php"
     </div>
 </div>
 </div>
-
+<div id="session">
+    <?php
+    include 'login.html'
+    ?>
+</div>
+<div id="about">
 <?php
 include 'foot.php'
 ?>
+</div>
 </body>
 </html>
