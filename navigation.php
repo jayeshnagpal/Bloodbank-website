@@ -33,9 +33,7 @@
     ul.navi li a:hover:not(.active) {
         background-color: #222222;
     }
-    ul.navi li a.active {
-        background-color: #4CAF50;
-    }
+
 
     @media screen and (max-width: 600px){
         ul.navi{position:relative; font-size: small;}
@@ -45,8 +43,7 @@
 </style>
 <script src="jq/js1.js"></script>
 <ul class="navi">
-    <li><a href="main.php" >Home</a></li>
-    <li><a href="#news">Services</a></li>
-    <li><a href="contact.php">Contact</a></li>
+    <li><a href="#center" >Home</a></li>
+    <li><a href="#session">Contact</a></li>
     <li><a href="#about" onclick="myFunction()" >About</a></li>
 </ul>
