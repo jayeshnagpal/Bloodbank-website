@@ -44,6 +44,7 @@
 <script src="jq/js1.js"></script>
 <ul class="navi">
     <li><a href="#center" >Home</a></li>
-    <li><a href="#session">Contact</a></li>
+    <li><a href="#session">Login/Signup</a></li>
+    <li><a href="#session">Near-by</a></li>
     <li><a href="#about" onclick="myFunction()" >About</a></li>
 </ul>
