@@ -62,7 +62,7 @@ ul.foot li a {
     color: aliceblue;
 }
 
-@media only screen and (max-width:680px ){
+@media only screen and (max-width:745px ){
     [class*="col-"] {
         width: 100%;
     }
@@ -79,6 +79,10 @@ ul.foot li a {
         padding-left: 30px;
         float: none;
         position: relative;
+    }
+
+    .session{
+        padding:5px 20px 10px 20px;
     }
 
 }
