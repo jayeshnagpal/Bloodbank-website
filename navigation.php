@@ -35,7 +35,7 @@
     }
 
 
-    @media screen and (max-width: 600px){
+    @media screen and (max-width: 745px){
         ul.navi{position:relative; font-size: small;}
         ul.navi li {float: none; padding: 5px 5px 5px 5px;}
     }
@@ -45,6 +45,7 @@
 <ul class="navi">
     <li><a href="#center" >Home</a></li>
     <li><a href="#session">Login/Signup</a></li>
+    <li><a href="#session">Request/Donate</a></li>
     <li><a href="#session">Near-by</a></li>
     <li><a href="#about" onclick="myFunction()" >About</a></li>
 </ul>

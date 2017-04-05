@@ -81,7 +81,7 @@ include "navigation.php"
 </div>
 <div id="session">
     <?php
-    if(!isset($_Session))
+    if(isset($_Session) == false)
     include 'login.html';
 
     ?>
