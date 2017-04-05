@@ -43,7 +43,7 @@
         <input type="email" placeholder="Email-id" name="email" required/>
         <input type="password" placeholder="Password" name="password" required/>
         <input type="submit"  style="float: none;" value="Login" class="button"/>
-        <a href="signup.html" style="float: right">Sign-up here >></a>
+        <a href="signup.php" style="float: right">Sign-up here >></a>
     </form>
     </div>
         <div class="col-8 recents">

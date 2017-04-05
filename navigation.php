@@ -44,8 +44,14 @@
 <script src="jq/js1.js"></script>
 <ul class="navi">
     <li><a href="#center" >Home</a></li>
-    <li><a href="#session">Login/Signup</a></li>
+    <?php
+    if(isset($_Session) == false)
+        echo <<<TAG
+<li><a href="#session">Login/Signup</a></li>
+TAG;
+    ?>
+
     <li><a href="#session">Request/Donate</a></li>
     <li><a href="#session">Near-by</a></li>
-    <li><a href="#about" onclick="myFunction()" >About</a></li>
+    <li><a href="#about">About</a></li>
 </ul>
