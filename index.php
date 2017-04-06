@@ -89,12 +89,12 @@ include "navigation.php"
 </div>
 <div id="request_donate">
     <?php
-        include 'donate_request.php'
+        include 'donate_request.php';
     ?>
 </div>
 <div id="about">
 <?php
-include 'foot.php'
+include 'foot.php';
 ?>
 </div>
 </body>
