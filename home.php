@@ -84,7 +84,12 @@ include "navigation.php"
     if(isset($_Session) == false)
         include 'login.php';
     else
-        include 'requests.php'
+        include 'donate_request.php'
+    ?>
+</div>
+<div id="request_donate">
+    <?php
+        include 'donate_request.php'
     ?>
 </div>
 <div id="about">

@@ -51,7 +51,7 @@
 TAG;
     ?>
 
-    <li><a href="#session">Request/Donate</a></li>
+    <li><a href="#request_donate">Request/Donate</a></li>
     <li><a href="#session">Near-by</a></li>
     <li><a href="#about">About</a></li>
 </ul>
