@@ -82,15 +82,15 @@ include "navigation.php"
 <div id="session">
     <?php
     if(isset($_Session) == false)
-        include 'login.php';
+        include 'login_signup.php';
     else
         include 'donate_request.php'
     ?>
 </div>
 <div id="request_donate">
-    <?php
+   <!-- <?php
         include 'donate_request.php';
-    ?>
+    ?>-->
 </div>
 <div id="about">
 <?php

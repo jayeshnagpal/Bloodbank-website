@@ -21,12 +21,11 @@
         width: 25%;
 
     }
-    .recents{
-        float:left;
-        padding-left: 10%;
-        font-size: small;
-        font-family: "Bell MT";
-        color: #353535;
+
+    .name{
+        font-size: large;
+        max-width: 300px;
+        width: 100%;
     }
 </style>
     <link rel="stylesheet" href="css/home.css">
@@ -37,20 +36,26 @@
 
     <div class="row">
 
-    <div class="my-form col-4">
+    <div class="my-form col-6">
         <h4>Login</h4>
     <form action="login_action.php" method="post">
         <input type="email" placeholder="Email-id" name="email" required/>
         <input type="password" placeholder="Password" name="password" required/>
         <input type="submit"  style="float: none;" value="Login" class="button"/>
-        <a href="signup.php" style="float: right">Sign-up here >></a>
+
     </form>
     </div>
-        <div class="col-8 recents">
-            <h4>Recent Requests</h4>
-            <?php
-            include 'donate_request.php'
-            ?>
+        <div class="col-6 my-form">
+            <h4>SignUp</h4>
+            <form method="post" action="signup_action.php">
+                <input type="text" name="fname" placeholder="First Name" class="name" required>
+                <input type="text" name="lname" placeholder="Last Name" class="name" required>
+                <input type="email" placeholder="Email-id" name="email" style="max-width: 300px" required/>
+                <input type="password" placeholder="Password" name="password" style="max-width: 300px" required/>
+
+                <input type="submit" value="Signup" class="button" style="float: none;">
+
+            </form>
 
         </div>
     </div>
