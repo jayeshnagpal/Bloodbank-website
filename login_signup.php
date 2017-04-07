@@ -42,7 +42,6 @@
         <input type="email" placeholder="Email-id" name="email" required/>
         <input type="password" placeholder="Password" name="password" required/>
         <input type="submit"  style="float: none;" value="Login" class="button"/>
-
     </form>
     </div>
         <div class="col-6 my-form">
