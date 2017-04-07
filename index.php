@@ -9,17 +9,6 @@
 
 </head>
 <body>
-<!-- Navigation Bar
-<nav>
-    <ul class="navig">
-        <li><a href="#main" >Home</a></li>
-        <li><a href="#news">Services</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#about">About</a></li>
-        <li class="right"><a href="#home">BloodBank</a> </li>
-    </ul>
-</nav>
--->
 
 <?php
 include "navigation.php"
@@ -92,6 +81,7 @@ include "navigation.php"
         include 'donate_request.php';
     ?>-->
 </div>
+
 <div id="about">
 <?php
 include 'foot.php';

@@ -1,26 +1,18 @@
 <?php
-
+/*
+  $connection = new Mongo();
+ */
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "adbms";
 
-$conn = mysqli_connect($servername, $username, $password, $dbname);
 
-if ( isset($_POST['email']) ) {
-    print_r($_POST['email']);
-}
-else echo('Nothing');
-
-$username = $_POST['user'];
-$password = $_POST['pass'];
-print_r($username);
+$conn = mysqli_connect($servername, $username, $password);
 
 if ( isset($_POST['email']) ) {
     print_r($_POST['email']);
 }
-else echo('Nothing');
-if ($conn->connect_error) {
+elseif($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 

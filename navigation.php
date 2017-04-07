@@ -33,11 +33,14 @@
     ul.navi li a:hover:not(.active) {
         background-color: #222222;
     }
-
+    .user{
+        float: right;
+    }
 
     @media screen and (max-width: 745px){
         ul.navi{position:relative; font-size: small;}
         ul.navi li {float: none; padding: 5px 5px 5px 5px;}
+        .user {float:none;}
     }
 
 </style>
@@ -45,8 +48,8 @@
 <ul class="navi">
     <li><a href="#center" >Home</a></li>
     <li><a href="#request_donate">Request/Donate</a></li>
-    <li><a href="#session">Near-by</a></li>
     <li><a href="#about">About</a></li>
+    <div class="user">
     <?php
     if(isset($_Session) == false)
         echo <<<TAG
@@ -57,5 +60,5 @@ TAG;
 <li><a href="#session" style="float:right;>Logout</a></li>
 TAG;
     ?>
-
+    </div>
 </ul>
