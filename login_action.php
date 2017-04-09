@@ -1,21 +1,35 @@
 <?php
-/*
-  $connection = new Mongo();
- */
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "adbms";
 
-$conn = mysqli_connect($servername, $username, $password,$dbname);
+session_start();
+$email=$_POST['email'];
+$pass=$_POST['password'];
+$mng = new MongoDB\Driver\Manager("mongodb://localhost:27017");
+$filter = ['email' => $email, 'password' => $pass ];
+$query = new MongoDB\Driver\Query($filter);
+$res = $mng->executeQuery("bloodbank.users", $query);
+$rows = current($res->toArray());
+if (!empty($rows))
+    echo"true";
+else
+    echo "false";
 
-if ( isset($_POST['email']) ) {
-    print_r($_POST['email']);
+
+/*  PHP code for db
+require_once 'config.php';
+$query = "Select * from users where email = ? and password = ?";
+$statement = $con->prepare($query);
+$statement->bind_param('ss',$email,$pass);
+$statement->execute();
+$result = $statement->get_result();
+$row = $result->fetch_assoc();
+if ($result->num_rows == 1) {
+    echo "true";
+    $_SESSION['name'] = $row['fname'];
+    $_SESSION['email'] = $row['email'];
 }
-elseif($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
+else {
+    echo "false";
 }
-
-$conn->close();
-
+$statement->close();
+*/
 ?>
