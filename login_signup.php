@@ -1,4 +1,6 @@
-<head><style>
+
+<head>
+    <style>
     .my-form{
         float: left;
         width: 60%;
@@ -31,6 +33,7 @@
 
 </style>
     <link rel="stylesheet" href="css/home.css">
+    <script src="js/login.js"></script>
 </head>
 
 <body>
@@ -40,9 +43,9 @@
     <div class="err" id="add_err"></div>
     <div class="my-form col-6">
         <h4>Login</h4>
-    <form action="./" method="post" id="login_form">
-        <input type="email" placeholder="Email-id" name="email" required/>
-        <input type="password" placeholder="Password" name="password" required/>
+    <form action="" method="post" id="login_form">
+        <input type="email" placeholder="Email-id" name="email" id="email" required/>
+        <input type="password" placeholder="Password" name="password" id="password" required/>
         <input type="submit"  style="float: none;" value="Login" id="login" class="button"/>
     </form>
     </div>

@@ -1,3 +1,7 @@
+<?php
+
+session_start();
+?>
 
 <style>
 
@@ -43,7 +47,8 @@
     }
 
 </style>
-<script src="jq/js1.js"></script>
+<script src="js/login.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 <ul class="navi">
     <li><a href="#center" >Home</a></li>
     <li><a href="#request_donate">Request/Donate</a></li>
@@ -57,7 +62,7 @@
 TAG;
     else:
     echo <<<TAG
-        <li><a href="end.php" name="logout">Logout</a></li>
+        <li><a href="" id="logout" name="logout">Logout</a></li>
 TAG;
     endif;
     ?>

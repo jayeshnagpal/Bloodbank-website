@@ -1,6 +1,6 @@
 <?php
 
-
+session_start();
 $email=$_POST['email'];
 $pass=$_POST['password'];
 $mng = new MongoDB\Driver\Manager("mongodb://localhost:27017");
@@ -10,12 +10,13 @@ $res = $mng->executeQuery("bloodbank.users", $query);
 $rows = current($res->toArray());
 if (!empty($rows)) {
     echo "true";
-    session_start();
     $_SESSION['name'] = $rows->name->first;
 }
 else
     echo "false";
 
+if(isset($_POST['action']))
+    unset($_SESSION['name']);
 
 /*  PHP code for db
 require_once 'config.php';
