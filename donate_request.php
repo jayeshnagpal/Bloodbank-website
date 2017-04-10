@@ -1,33 +1,58 @@
-<!DOCTYPE html>
-<html>
 <head>
-    <title>Text Input Control</title>
+    <link rel="stylesheet" type="text/css" href="css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+    <style>
+        .donate{
+            border: solid;
+            border-width: 1px;
+            padding: 1%;
+            margin: 4%;
+            float: left;
+        }
+        .button {
+
+            display: inline-block;
+            border-radius: 4px;
+            background-color: #00a092;
+            border: none;
+            color: #FFFFFF;
+            text-align: center;
+            font-size: small;
+            padding: 15px;
+            width: 25%;
+
+        }
+
+        .name{
+            font-size: large;
+            max-width: 250px;
+            width: 100%;
+        }
+
+    </style>
 </head>
-<body>
-<form class="my-form" >
-    Patient Name:  <input type="text" name="patient_name" />
-    <br>
-    Blood Group:  <input type="text" name="last_name" />
-    <select name="Blood Group">
-        <option value="B+" selected>B+</option>
-        <option value="O+">O+</option>
-        <option value="A+">A+ </option>
-        <option value="B-">B- </option>
-    </select>
-    </br>City:  <input type="text" name="last_name" />
-    <select name="Blood Group">
-        <option value="Mumbai" selected>Mumbai</option>
-        <option value="Delhi">Delhi</option>
-        <option value="Chennai">Chennai </option>
-    </select>
-    </br>
-    Hospital name & address:
-    <br>
-    <textarea rows="4" cols="50">
-</textarea><br>
-    Doctor's Name:  <input type="text" name="doctors_name" />
 
+<div class="donate col-5">
+    <form>
+        <h4>Donation</h4>
 
-</form>
-</body>
-</html>
+        <input type="text" name="first name"  placeholder="First name">
+        <input type="text" name="first name"  placeholder="Last name" >
+        <input type="text" name="first name"  placeholder="Contact" >
+
+        <label>Birthdate:</label><input name="birth" type="date" >
+        <input type="submit" value="Submit" class="button">
+
+    </form>
+</div>
+<div class="donate col-5">
+    <form>
+        <h4>Details of Reciever</h4>
+        <input type="text" name="first name"  placeholder="First name">
+        <input type="text" name="first name"  placeholder="last name">
+        <input type="text" name="first name"  placeholder="Contact">
+        <label>Birthdate:</label><input name="birth" type="date">
+        <input type="submit" value="Submit" class="button">
+
+    </form>
+</div>

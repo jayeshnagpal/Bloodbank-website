@@ -1,31 +1,16 @@
 
 $(document).ready(function(){
-    $("#add_err").css('display', 'none', 'important');
-    $("login").click(function () {
-        email = $("#email").val();
-        password = $("#password").val();
-
-        $ajax({
-            type: "POST",
-            url: "login_action.php",
-            data: "email="+username+"&pasword="+password,
-            success: function(html) {
-                if (html == 'true') {
-                    //$("#add_err").html("right username or password");
-                    window.location = "dashboard.php";
+    $('#login').click(
+        function () {
+            $.post( $("#login_form").attr("action"),
+                $("#login_form:input").serializeArray(),function (data) {
+                    $("div#add_err").html(data);
                 }
-                else {
-                    $("#add_err").css('display', 'inline', 'important');
-                    $("#add_err").html("<img src='images/alert.png' />Wrong username or password");
+            )
+            $("#login_form").submit(
+                function () {
+                    return false;
                 }
-            },
-            beforeSend:function()
-            {
-                $("#add_err").css('display', 'inline', 'important');
-                $("#add_err").html("<img src='images/ajax-loader.gif' /> Loading...")
-            }
-        });
-        return false;
-
+            )
         })
 });

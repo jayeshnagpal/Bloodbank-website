@@ -1,6 +1,6 @@
 <?php
 
-session_start();
+
 $email=$_POST['email'];
 $pass=$_POST['password'];
 $mng = new MongoDB\Driver\Manager("mongodb://localhost:27017");
@@ -8,8 +8,11 @@ $filter = ['email' => $email, 'password' => $pass ];
 $query = new MongoDB\Driver\Query($filter);
 $res = $mng->executeQuery("bloodbank.users", $query);
 $rows = current($res->toArray());
-if (!empty($rows))
-    echo"true";
+if (!empty($rows)) {
+    echo "true";
+    session_start();
+    $_SESSION['name'] = $rows->name->first;
+}
 else
     echo "false";
 

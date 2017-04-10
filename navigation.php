@@ -50,14 +50,16 @@
     <li><a href="#about">About</a></li>
     <div class="user">
     <?php
-    if(isset($_Session) == false)
-        echo <<<TAG
-<li><a href="#session" style="float:right;">Login/Signup</a></li>
+    //session_start();
+    if(!isset($_SESSION['name'])):
+            echo <<<TAG
+        <li><a href="#session">Login-Signup</a></li>
 TAG;
-    else
-        <<<TAG
-<li><a href="#session" style="float:right;>Logout</a></li>
+    else:
+    echo <<<TAG
+        <li><a href="end.php" name="logout">Logout</a></li>
 TAG;
+    endif;
     ?>
     </div>
 </ul>

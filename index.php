@@ -6,11 +6,13 @@
     <link rel="stylesheet" type="text/css" href="css/home.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="script" href="js/login.js">
 
 </head>
 <body>
 
 <?php
+session_start();
 include "navigation.php "
 ?>
 
@@ -70,17 +72,10 @@ include "navigation.php "
 </div>
 <div id="session">
     <?php
-    if(isset($_Session) == false){
+    if(empty($_SESSION))
         include 'login_signup.php';
-    }
     ?>
 </div>
-
-<div id="request_donate">
-
-
-</div>
-
 <div id="about">
 <?php
 include 'foot.php';

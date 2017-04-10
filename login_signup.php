@@ -40,10 +40,10 @@
     <div class="err" id="add_err"></div>
     <div class="my-form col-6">
         <h4>Login</h4>
-    <form action="login_action.php" method="post">
+    <form action="./" method="post" id="login_form">
         <input type="email" placeholder="Email-id" name="email" required/>
         <input type="password" placeholder="Password" name="password" required/>
-        <input type="submit"  style="float: none;" value="Login" name="login" class="button"/>
+        <input type="submit"  style="float: none;" value="Login" id="login" class="button"/>
     </form>
     </div>
         <div class="col-6 my-form">
