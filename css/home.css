@@ -6,6 +6,7 @@
     content: "";
     clear: both;
     display: table;
+    margin-bottom: 0px;
 }
 
 
@@ -65,6 +66,7 @@ ul.foot li a {
 ul.foot li a:visited{
     color: white;
 }
+
 
 @media only screen and (max-width:745px ){
     [class*="col-"] {

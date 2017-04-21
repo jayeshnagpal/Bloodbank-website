@@ -36,10 +36,10 @@
     <form>
         <h4>Donation</h4>
 
-        <input type="text" name="first name"  placeholder="First name">
-        <input type="text" name="first name"  placeholder="Last name" >
-        <input type="text" name="first name"  placeholder="Contact" >
-
+        <input type="text" name="firstname"  placeholder="First name">
+        <input type="text" name="lastname"  placeholder="Last name" >
+        <input type="text" name="contact"  placeholder="Contact" >
+        <input type="email" name="email" placeholder="Email id"
         <label>Birthdate:</label><input name="birth" type="date" >
         <input type="submit" value="Submit" class="button">
 

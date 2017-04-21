@@ -74,6 +74,13 @@ include "navigation.php "
     <?php
     if(empty($_SESSION))
         include 'login_signup.php';
+    else
+        <<<Tag
+    <form>
+        <input type="text" placeholder="Your Comments">
+        <input type="submit"> 
+    </form>
+Tag;
     ?>
 </div>
 <div id="about">

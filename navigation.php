@@ -1,5 +1,4 @@
 <?php
-
 session_start();
 ?>
 
@@ -51,7 +50,14 @@ session_start();
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 <ul class="navi">
     <li><a href="#center" >Home</a></li>
-    <li><a href="#request_donate">Request/Donate</a></li>
+    <?php
+    if(isset($_SESSION['name'])):
+        echo <<<TAG
+        <li><a href="donate_request.php">Request/Donate</a></li>
+        <li><a href="">Feedback</a></li>
+TAG;
+    endif;
+    ?>
     <li><a href="#about">About</a></li>
     <div class="user">
     <?php
