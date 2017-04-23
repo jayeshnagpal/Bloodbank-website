@@ -1,16 +1,14 @@
 <head>
-    <link rel="stylesheet" type="text/css" href="css/home.css">
+    <!--<link rel="stylesheet" type="text/css" href="css/home.css">-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
     <style>
         .donate{
-            border: solid;
-            border-width: 1px;
             padding: 1%;
             margin: 4%;
             float: left;
         }
         .button {
-
+            float: right;
             display: inline-block;
             border-radius: 4px;
             background-color: #00a092;
@@ -25,34 +23,22 @@
 
         .name{
             font-size: large;
-            max-width: 250px;
+            max-width: 300px;
             width: 100%;
         }
 
     </style>
 </head>
-
-<div class="donate col-5">
+<div class="row">
+    <h4>Details of Reciever</h4>
+<div class="donate col-8">
     <form>
-        <h4>Donation</h4>
-
-        <input type="text" name="firstname"  placeholder="First name">
-        <input type="text" name="lastname"  placeholder="Last name" >
-        <input type="text" name="contact"  placeholder="Contact" >
-        <input type="email" name="email" placeholder="Email id"
-        <label>Birthdate:</label><input name="birth" type="date" >
-        <input type="submit" value="Submit" class="button">
+        <input type="text" id="first_name"  placeholder="First name" class="name">
+        <input type="text" id="last_name"  placeholder="last name" class="name">
+        <input type="text" id="contact"  placeholder="Contact" class="name">
+        <label style="font-size: medium">Birthdate:</label><input name="birth" type="date" class="name" style="max-width: 200px">
+        <br><input type="submit" value="Submit" class="button">
 
     </form>
 </div>
-<div class="donate col-5">
-    <form>
-        <h4>Details of Reciever</h4>
-        <input type="text" name="first name"  placeholder="First name">
-        <input type="text" name="first name"  placeholder="last name">
-        <input type="text" name="first name"  placeholder="Contact">
-        <label>Birthdate:</label><input name="birth" type="date">
-        <input type="submit" value="Submit" class="button">
-
-    </form>
-</div>
+    </div>

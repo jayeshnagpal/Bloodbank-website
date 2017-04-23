@@ -32,6 +32,7 @@
 
 
 </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <link rel="stylesheet" href="css/home.css">
     <script src="js/login.js"></script>
 </head>
@@ -40,7 +41,6 @@
 <div class="login">
 
     <div class="row">
-    <div class="err" id="add_err"></div>
     <div class="my-form col-6">
         <h4>Login</h4>
     <form action="" method="post" id="login_form">
@@ -51,13 +51,13 @@
     </div>
         <div class="col-6 my-form">
             <h4>SignUp</h4>
-            <form method="post" action="signup_action.php">
-                <input type="text" name="fname" placeholder="First Name" class="name" required>
-                <input type="text" name="lname" placeholder="Last Name" class="name" required>
-                <input type="email" placeholder="Email-id" name="email" style="max-width: 300px" required/>
-                <input type="password" placeholder="Password" name="password" style="max-width: 300px" required/>
+            <form method="post" action="" id="signup_form">
+                <input type="text" id="fname" placeholder="First Name" class="name" required>
+                <input type="text" id="lname" placeholder="Last Name" class="name" required>
+                <input type="email" placeholder="Email-id" id="emailid" style="max-width: 300px" required/>
+                <input type="password" placeholder="Password" id="pass" style="max-width: 300px" required/>
 
-                <input type="submit" value="Signup" class="button" style="float: none;">
+                <input type="submit" value="Signup" class="button" style="float: none;" id="sign">
 
             </form>
 

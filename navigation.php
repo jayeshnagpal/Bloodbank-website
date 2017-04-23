@@ -53,7 +53,7 @@ session_start();
     <?php
     if(isset($_SESSION['name'])):
         echo <<<TAG
-        <li><a href="donate_request.php">Request/Donate</a></li>
+        <li><a href="#session">Request/Donate</a></li>
         <li><a href="">Feedback</a></li>
 TAG;
     endif;

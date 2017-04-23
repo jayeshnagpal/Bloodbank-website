@@ -10,7 +10,7 @@
 <footer>
     <div class="row">
         <div class="col-4 map" style="padding: .5% .5% .5% .5%;float: left;">
-            <img width="100%" src="https://maps.googleapis.com/maps/api/staticmap?center=Mumbai&zoom=13&scale=false&size=600x300&maptype=roadmap&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:1%7CBandra&markers=size:mid%7Ccolor:0xff0000%7Clabel:1%7CPowai&markers=size:mid%7Ccolor:0xff0000%7Clabel:1%7CMumbai" alt="Google Map of Mumbai">
+            <!--<img width="100%" src="https://maps.googleapis.com/maps/api/staticmap?center=Mumbai&zoom=13&scale=false&size=600x300&maptype=roadmap&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:1%7CBandra&markers=size:mid%7Ccolor:0xff0000%7Clabel:1%7CPowai&markers=size:mid%7Ccolor:0xff0000%7Clabel:1%7CMumbai" alt="Google Map of Mumbai">-->
         </div>
 
         <div class="col-4" style="float: left;padding: 2px">
