@@ -28,6 +28,7 @@ else
     ];
     $bulk->insert($ins);
     $mng->executeBulkWrite($coll, $bulk);
+    echo"true";
 }
 
 ?>

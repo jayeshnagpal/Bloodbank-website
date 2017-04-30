@@ -43,25 +43,24 @@ $(document).ready(function(){
     });
 
     $('#signup').click( function () {
-        alert("success");
+
         var emailid = $('#emailid').val();
         var pass = $('#pass').val();
         var fname = $('#fname').val();
         var lname = $('#lname').val();
 
         if(emailid != '' && pass != '' && fname!=''){
-            alert("success 1");
+
             $.ajax({
                 url:"signup_action.php",
                 method : "POST",
                 data :{emailid:emailid, pass:pass, lname:lname, fname:fname },
                 success: function (data) {
-                    alert(emailid);
                     if(data =='false')
                         alert("Email Already Exists");
                     else
                     {
-                        location.href = "signup_action.php";
+                        location.reload();
                     }
                 }
             });

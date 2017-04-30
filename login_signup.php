@@ -57,7 +57,7 @@
                 <input type="email" placeholder="Email-id" id="emailid" style="max-width: 300px" required/>
                 <input type="password" placeholder="Password" id="pass" style="max-width: 300px" required/>
 
-                <input type="submit" value="Signup" class="button" style="float: none;" id="sign">
+                <input type="submit" value="Signup" class="button" style="float: none;" id="signup">
 
             </form>
 
