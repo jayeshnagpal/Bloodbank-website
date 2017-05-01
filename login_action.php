@@ -10,13 +10,13 @@ $res = $mng->executeQuery("bloodbank.users", $query);
 $rows = current($res->toArray());
 if (!empty($rows)) {
     echo "true";
-    $_SESSION['name'] = $rows->name->first;
+    $_SESSION['email'] = $rows->email;
 }
 else
     echo "false";
 
 if(isset($_POST['action']))
-    unset($_SESSION['name']);
+    unset($_SESSION['email']);
 
 /*  PHP code for db
 require_once 'config.php';

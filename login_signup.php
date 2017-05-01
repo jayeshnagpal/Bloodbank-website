@@ -43,15 +43,16 @@
     <div class="row">
     <div class="my-form col-6">
         <h4>Login</h4>
-    <form action="" method="post" id="login_form">
+    <form method="post" id="login_form">
         <input type="email" placeholder="Email-id" name="email" id="email" required/>
         <input type="password" placeholder="Password" name="password" id="password" required/>
         <input type="submit"  style="float: none;" value="Login" id="login" class="button"/>
     </form>
+        <p id="output" style="float: right"></p>
     </div>
         <div class="col-6 my-form">
             <h4>SignUp</h4>
-            <form method="post" action="" id="signup_form">
+            <form method="post" id="signup_form">
                 <input type="text" id="fname" placeholder="First Name" class="name" required>
                 <input type="text" id="lname" placeholder="Last Name" class="name" required>
                 <input type="email" placeholder="Email-id" id="emailid" style="max-width: 300px" required/>

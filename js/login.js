@@ -1,7 +1,5 @@
 
 $(document).ready(function(){
-
-    // alert("hello");
     $('#login').click( function () {
         var email = $('#email').val();
         var password = $('#password').val();
@@ -12,13 +10,11 @@ $(document).ready(function(){
                     method : "POST",
                 data :{email:email, password:password},
                 success: function (data) {
-
-                    if(data ==='false')
-                        alert("incorrect input");
-                    else
-                    {
+                    if(data =='false') {
+                        document.getElementById("output").innerHTML = "Invalid Input";
+                    }
+                    if(data == 'true') {
                         location.reload();
-
                     }
                 }
             });
